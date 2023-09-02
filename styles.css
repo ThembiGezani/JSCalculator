@@ -1,0 +1,93 @@
+/* Center the calculator */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Style the calculator */
+#calculator {
+  width: 300px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Style the display area */
+#display {
+  font-size: 24px;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the calculator buttons */
+button {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  font-size: 18px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  background-color: #b957464d;
+}
+
+/* Style specific buttons */
+#clear {
+  grid-column: span 2;
+  background-color: #ff6347;
+}
+
+#equals {
+  grid-column: span 2;
+  background-color: #228b22;
+}
+
+/* Style operator buttons */
+#add,
+#subtract,
+#multiply,
+#divide {
+  background-color: #008cba;
+  color: #fff;
+}
+
+/* Style number buttons */
+#zero,
+#one,
+#two,
+#three,
+#four,
+#five,
+#six,
+#seven,
+#eight,
+#nine,
+#decimal {
+  background-color: #f9f9f9;
+}
+
+/*Media query for screens between 769 and 1024px wide(eg tablets)*/
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  #calculator {
+    width: 400px;
+  }
+}
+
+/*Media query for screens 1025px and wider (e.g. desktops)*/
+@media screen and (min-width: 1025px) {
+  #calculator {
+    width: 500px;
+  }
+}
